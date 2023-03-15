@@ -1,0 +1,13 @@
+@import-normalize
+
+body {
+  margin: 0;
+  font-family: 'Inter', 'Montserrat', sans-serif;
+}
+
+#root {
+  --main: #E4E5EA;
+  --blue-btn: #4077F3;
+  --dark-blue-btn: #1244aa;
+  --gray: #656566;
+}

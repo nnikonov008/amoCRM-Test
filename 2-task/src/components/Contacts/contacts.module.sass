@@ -1,0 +1,56 @@
+.contacts
+  display: flex
+  list-style-type: none
+  margin: 0
+  font-family: 'Inter', sans-serif
+  z-index: 1
+  &_flex
+    display: flex
+    flex-direction: column
+    list-style-type: none
+  &__item
+    display: flex
+    justify-content: flex-end
+    font-style: normal
+    font-weight: 500
+    font-size: 16px
+    line-height: 19px
+    text-align: right
+    color: var(--main)
+    margin-bottom: 5px
+    &_flex
+      margin-top: 20px
+      display: flex
+      justify-content: flex-end
+      & li > img
+        margin-left: 14px
+  &__item_text
+    font-weight: 500
+    font-size: 16px
+    line-height: 19px
+    text-align: right
+    color: var(--main)
+  &__social
+    display: flex
+  &__social_image
+    margin-top: -20px
+    margin-left: 34px
+  &__social_image:hover
+    cursor: pointer
+  &__item_address
+    display: flex
+    flex-direction: column
+    margin-top: 10px
+  &__item_address_none
+    display: none
+@media screen and (max-width: 1400px)
+  .contacts
+    display: flex
+    flex-direction: column
+    &__item_text
+      margin-bottom: 20px
+@media screen and (max-width: 1150px)
+  .contacts
+    display: flex
+    flex-direction: column
+    margin-left: -50px

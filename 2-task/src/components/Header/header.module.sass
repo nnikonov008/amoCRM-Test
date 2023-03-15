@@ -1,0 +1,53 @@
+.header
+  max-height: 73px
+  padding: 46px 150px
+  display: flex
+  justify-content: space-between
+.logo
+  max-width: 165px
+  text-decoration: none
+  &__descr
+    margin-top: 10px
+    height: 24px
+    font-family: 'Montserrat',serif
+    font-style: normal
+    font-weight: 300
+    font-size: 10px
+    line-height: 12px
+    color: var(--main)
+
+.menu
+  display: flex
+  color: var(main)
+  margin-left: 53px
+  &__item
+    list-style-type: none
+    margin-right: 30px
+    text-decoration: none
+    z-index: 1
+    color: var(--main)
+    font-family: 'Inter', sans-serif
+    font-style: normal
+    font-weight: 500
+    font-size: 16px
+    line-height: 19px
+    &:hover
+      cursor: pointer
+@media screen and (max-width: 1150px)
+  .header
+    padding: 46px 55px
+  .menu
+    margin-left: -80px
+    &__item
+      margin-right: 15px
+      font-weight: 300
+      font-size: 14px
+@media screen and (max-width: 880px)
+  .header
+    padding: 46px 55px
+  .menu
+    margin-left: 0
+    &__item
+      margin-right: 10px
+      font-size: 12px
+

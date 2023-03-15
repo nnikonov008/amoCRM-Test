@@ -1,0 +1,78 @@
+.footer
+  display: flex
+  width: 92%
+  justify-content: space-between
+  margin: 0 auto
+  font-family: 'Inter', sans-serif
+  &__menu
+    padding: 50px 52px 0
+  &__menu:nth-child(2)
+    margin-left: -30px
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    height: 221px
+    width: 500px
+  &__menu:last-child
+    .footer__menu_title
+      margin-bottom: -10px
+      text-align: end
+  &__menu_title
+    font-style: normal
+    font-weight: 700
+    font-size: 14px
+    line-height: 17px
+    letter-spacing: 0.05em
+    text-transform: uppercase
+    color: var(--gray)
+    margin-bottom: 20px
+  &__menu_description
+    text-decoration: none
+    display: flex
+    flex-direction: column
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 19px
+    color: var(--main)
+    margin-bottom: 10px
+  &__menu_description:nth-child(7)
+    margin-top: 60px
+  &__menu_copyright
+    margin: 70px 0 5px
+    font-family: 'Montserrat', sans-serif
+    font-style: normal
+    font-weight: 400
+    font-size: 12px
+    line-height: 15px
+    text-align: right
+    color: var(--main)
+  &__menu_policy
+    font-family: 'Montserrat', sans-serif
+    font-style: normal
+    font-weight: 400
+    font-size: 12px
+    line-height: 15px
+    text-decoration-line: underline
+    text-align: right
+    color: var(--main)
+@media screen and (max-width: 1220px)
+  .footer
+    &__menu
+      padding: 50px 22px 0
+@media screen and (max-width: 980px)
+  .footer
+    &__menu
+      padding: 50px 2px 0
+    &__menu_copyright
+      margin: 20px 0 5px
+@media screen and (max-width: 870px)
+  .footer
+    &__menu
+      padding-left: -20px
+    &__menu:nth-child(2)
+      margin-left: 0
+      width: 650px
+    & nav
+      align-items: start
+      flex-direction: column
